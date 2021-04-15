@@ -21,7 +21,7 @@ When an authorized user sends /bot command, the ESP32 returns a message with the
 
 ![](bot-telegram.png)
 
-![](https://youtu.be/WIybgvwA6as)
+<!-- ![](https://youtu.be/WIybgvwA6as) -->
 [![IMAGE ALT TEXT HERE](./video-telegram-bot.mp4)](./video-telegram-bot.mp4)
 
 The serial output to debug:
