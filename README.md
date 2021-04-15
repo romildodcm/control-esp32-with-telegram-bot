@@ -1,4 +1,4 @@
-A simple Arduino code for ESP32 to control GPIO with Telegram bot, to use this code you need to [install the ESP32 board on Arduino IDE](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/) and install the [Universal Telegram Bot](https://www.arduino.cc/reference/en/libraries/universaltelegrambot/) library. At the beginning of the [code]() you need to enter your Wi-Fi credentials, your bot token* and your Telegram chat ID**.
+A simple Arduino code for ESP32 to control GPIO with Telegram bot, to use this code you need to [install the ESP32 board on Arduino IDE](https://randomnerdtutorials.com/installing-the-esp32-board-in-arduino-ide-windows-instructions/) and install the [Universal Telegram Bot](https://www.arduino.cc/reference/en/libraries/universaltelegrambot/) library. At the beginning of the [code](https://github.com/romildodcm/control-esp32-with-telegram-bot/tree/main/esp_32_telegram) you need to enter your Wi-Fi credentials, your bot token* and your Telegram chat ID**.
 
 ```
 // Set the Wi-Fi credentials
@@ -12,14 +12,19 @@ String CHAT_ID = "1234567891011"; // Your chat ID
 
 *If you don't have a Telegram bot or don't know how to find the bot token, follow this tutorial: [How to Create and Connect a Telegram Chatbot](https://sendpulse.com/knowledge-base/chatbot/create-telegram-chatbot)
 
-**To get your chat ID, open [@myidbot](t.me/myidbot) in your telegram and type the /getid command, the bot will be return the your user ID. With you can add your bot to a group, you will need the group ID (see [Get Telegram Chat ID](https://sean-bradley.medium.com/get-telegram-chat-id-80b575520659)), and you need to [allow the bot to have read access to messages in the group](https://stackoverflow.com/questions/50204633/allow-bot-to-access-telegram-group-messages) to receive commands.
+**To get your chat ID, open [@myidbot](https://t.me/myidbot) in your telegram and type the /getid command, the bot will be return the your user ID. With you can add your bot to a group, you will need the group ID (see [Get Telegram Chat ID](https://sean-bradley.medium.com/get-telegram-chat-id-80b575520659)), and you need to [allow the bot to have read access to messages in the group](https://stackoverflow.com/questions/50204633/allow-bot-to-access-telegram-group-messages) to receive commands.
 
 In this example, I used an ESP32-Cam board that has an internal led on GPIO 4 and I add an external led on GPIO 2 to test the blink. 
 ![ESP32-Cam Board](ESP32-CAM-Pinout-AI-thinker-1280x720.jpg)
 
-When an authorized user sends /bot command, the ESP32 returns a message with the available commands, if type any commando, will execute the action and reply. If an unauthorized user sends a command, the bot reply "unauthorized user". See the [test video]().
+When an authorized user sends /bot command, the ESP32 returns a message with the available commands, if type any commando, will execute the action and reply. If an unauthorized user sends a command, the bot reply "unauthorized user". See the [test video](https://github.com/romildodcm/control-esp32-with-telegram-bot/blob/main/video-telegram-bot.mp4).
 
 ![](bot-telegram.png)
+
+<video width="320" height="240" controls>
+  <source src="https://github.com/romildodcm/control-esp32-with-telegram-bot/blob/main/video-telegram-bot.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
 
 The serial output to debug:
 
