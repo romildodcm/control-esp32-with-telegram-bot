@@ -17,7 +17,7 @@ String CHAT_ID = "1234567891011"; // Your chat ID
 In this example, I used an ESP32-Cam board that has an internal led on GPIO 4 and I add an external led on GPIO 2 to test the blink. 
 ![ESP32-Cam Board](ESP32-CAM-Pinout-AI-thinker-1280x720.jpg)
 
-When an authorized user sends /bot command, the ESP32 returns a message with the available commands, if type any commando, will execute the action and reply. If an unauthorized user sends a command, the bot reply "unauthorized user".
+When an authorized user sends /bot command, the ESP32 returns a message with the available commands, if type any command, will execute the action and reply. If an unauthorized user sends a command, the bot reply "unauthorized user".
 
 ![](bot-telegram.png)
 
